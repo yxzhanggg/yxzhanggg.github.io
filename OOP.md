@@ -20,7 +20,9 @@ class C
   private:
     A *a;
 };
-// B and C are both aggregates of A / B "HAS-A" A / C "HAS-A" A
+// B and C are both aggregates of A 
+// B "HAS-A" A, B "USES_A" A
+// C "HAS-A" A, C "USES_A" A
 ```
 # Composition [PART-OF]
 ```c++
@@ -39,5 +41,6 @@ class B
       a.foo();
     }
 };
-// B is a composition with A / "PART-OF" B is A
+// B is a composition with A 
+// "PART-OF" B is A
 ```
