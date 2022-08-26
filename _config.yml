@@ -1,6 +1,6 @@
 remote_theme: b2a3e8/jekyll-theme-console
 
-title: 'Yaoxin's Tech Blog'
+title: 'Yaoxins Tech Blog'
 
 style: light
 
@@ -9,3 +9,4 @@ header_pages:
   - Unix.md
   - OOP.md
 
+footer: 'Yaoxin'
