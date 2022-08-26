@@ -4,3 +4,5 @@ style: light
 
 header_pages:
   - index.md
+  - Unix.md
+  - OOP.md
