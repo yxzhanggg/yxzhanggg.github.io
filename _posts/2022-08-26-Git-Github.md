@@ -7,8 +7,8 @@ date:   2022-08-26
 # Configure Github
 ```sh
 # Configure local git
-git config --global user.name "user.name"
-git config --global user.email "user.email"
+git config --global user.name "<name>"
+git config --global user.email "<email>"
 
 # Generate ssh file
 ssh-keygen -t rsa
