@@ -37,7 +37,7 @@ class A
 class B
 {
   private:
-    B a;
+    A a;
   public:
     void dfoo() // dfoo is a delegate from a
     {
