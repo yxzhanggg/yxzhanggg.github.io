@@ -6,22 +6,22 @@ date:   2022-08-26
 
 # Configure Github
 
-## configure local git
+## Configure local git
 
 ```shell
 git config --global user.name "user.name"
 git config --global user.email "user.email"
 ```
 
-## generate ssh file
+## Generate ssh file
 
 ```sh
 ssh-keygen -t rsa
 ```
 
-copy everything in `~/.ssh/id_rsa.pub` to SSH setting of your `github repository`
+Copy everything in `~/.ssh/id_rsa.pub` to SSH setting of your `github repository`
 
-## test connection
+## Test connection
 
 ```sh
 ssh -T git@github.com
