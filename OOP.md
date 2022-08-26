@@ -7,11 +7,11 @@ permalink: /OOP
 ```c++
 class A
 {
-  private:
-  int x; // will not be inherited
-  protected:
+  private: // will not be inherited
+  int x;
+  protected: // will be inherited, but is not accessible by A.y;
   int y; 
-  public:
+  public: // is accessible by A.foo();
   void foo();
 };
 class B : public A
