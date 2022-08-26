@@ -22,8 +22,14 @@ class B : public A
 };
 // B "IS-A" derivative A 
 ```
+
+
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+
 | Access | public | protected | private |
-| :-----| ----: | :----: | :----: |
 | Inside class | yes | yes | yes |
 | Derived class | yes | yes | no |
 | Outside class | yes | no | no |
