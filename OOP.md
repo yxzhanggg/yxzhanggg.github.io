@@ -3,7 +3,7 @@ title: /OOP
 layout: page
 permalink: /OOP
 ---
-# Composition [PART-OF]
+# Composition [PART-OF] and Delegation
 ```c++
 class A
 {
