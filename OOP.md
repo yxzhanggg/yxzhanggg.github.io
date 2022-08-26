@@ -3,6 +3,31 @@ title: /OOP
 layout: page
 permalink: /OOP
 ---
+# Inheritance [IS-A]
+```c++
+class A
+{
+  private:
+  int x; // will not be inherited
+  protected:
+  int y; 
+  public:
+  void foo();
+};
+class B : public A
+{
+  private:
+  protected:
+  public:
+};
+// B "IS-A" derivative A 
+```
+| Access | public | protected | private |
+| :-----| ----: | :----: | :----: |
+| Inside class | yes | yes | yes |
+| Derived class | yes | yes | no |
+| Outside class | yes | no | no |
+
 # Composition [PART-OF] and Delegation
 ```c++
 class A
