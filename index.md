@@ -11,3 +11,5 @@ Many important concepts are distributed in various corners, and there are even d
 Then I have this blog, to explain inexplicable concepts（as categorized in pages), and to document solutions to frequently encountered problems (as posts).
 
 The topics would be mainly in the field of computer science at first.
+
+# Posts
