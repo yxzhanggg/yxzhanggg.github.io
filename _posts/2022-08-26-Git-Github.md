@@ -8,7 +8,7 @@ date:   2022-08-26
 
 1. Configure local git
 
-```shell
+```sh
 git config --global user.name "user.name"
 git config --global user.email "user.email"
 ```
