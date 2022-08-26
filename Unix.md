@@ -1,5 +1,5 @@
 ---
 title: /UNIX
-layout: home
+layout: page
 permalink: /UNIX/
 ---
