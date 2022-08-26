@@ -23,6 +23,7 @@ class B : public A
 // B "IS-A" derivative A 
 ```
 | Access        | public | protected | private |
+| :----:        | :----: | :----:    | :----:  |
 | Inside class  | yes    | yes       | yes     |
 | Derived class | yes    | yes       | no      |
 | Outside class | yes    | no        | no      |
