@@ -1,7 +1,7 @@
 ---
 title: /OOP
 layout: page
-permalink: /OOP
+permalink: /OOP/
 ---
 # Inheritance [IS-A]
 ```c++
