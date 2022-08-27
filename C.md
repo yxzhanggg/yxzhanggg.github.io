@@ -9,5 +9,5 @@ permalink: /C/
 ```
 # Logical Operators
 ```c
-exp1 || exp2; exp1 && exp2; !exp;
+!exp; exp1 || exp2; exp1 && exp2;
 ```
