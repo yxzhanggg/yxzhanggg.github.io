@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  Use light theme in chrome whatever the system theme is
