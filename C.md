@@ -6,8 +6,8 @@ permalink: /C/
 # Specifier
 ```c
 // lifetime all belows are the whole program runtime
-// external
-// declare global among files
+
+// global among files
 // -file 1
 int x;
 // -file 2 can access x by declaring extern
@@ -19,6 +19,4 @@ static int x; // defualt value 0
 
 // store it in register
 register int x;
-
-
 ```
