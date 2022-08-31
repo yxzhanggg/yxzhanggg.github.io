@@ -5,12 +5,11 @@ permalink: /OOP/
 ---
 # Inheritance [IS-A]
 ```c++
-/* Acceccibility
-  | Access        | public | protected | private |
-  | Inside class  | yes    | yes       | yes     |
-  | Derived class | yes    | yes       | no      |
-  | Outside class | yes    | no        | no      |
-*/
+// Acceccibility
+// | Access        | public | protected | private |
+// | Inside class  | yes    | yes       | yes     |
+// | Derived class | yes    | yes       | no      |
+// | Outside class | yes    | no        | no      |
 
 class Base
 {
@@ -22,11 +21,9 @@ class Base
     int z;
 };
 
-/*
-  Inheritability
-  | public | protected | private |
-  | yes    | yes       | no      |
-*/
+// Inheritability
+// | public | protected | private |
+// | yes    | yes       | no      |
 
 class PublicDerived: public Base
 {
