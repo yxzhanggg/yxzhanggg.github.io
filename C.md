@@ -5,22 +5,28 @@ permalink: /C/
 ---
 # Specifier
 ```c
-// lifetime all belows are the whole program runtime
+// Lifetime all belows are the whole program runtime
 
-// global among files
+// Global among files
 // -file 1
 int x;
 // -file 2 can access x by declaring extern
-extern int x; // declare outside any function (usually in header file), defualt value 0
+extern int x; // Declare outside any function (usually in header file)
+              // Defualt value 0
 x = 1;
 
-// private to the file
+// Private to the file
 static int x; // defualt value 0
 
-// store it in register
+// Store it in register
 register int x;
 ```
-# Pointer array
+# Array
 ```c
-int *array[3]; // an array of 3 pointers to integers
-int (*p)[3]; // a pinter to an array of 3 integers
+// Compared with fixed-size array, pointer array is more compatible 
+// with heterogeneous data structure
+int array[3][2]; // Fixed-size array
+int *array[3]; // Pointer array: an array of 3 pointers to integers
+
+int (*p)[3]; // A pinter to an array of 3 integers
+```
