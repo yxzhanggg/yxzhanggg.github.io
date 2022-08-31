@@ -20,3 +20,7 @@ static int x; // defualt value 0
 // store it in register
 register int x;
 ```
+# Pointer array
+```c
+int *array[3]; // an array of 3 pointers to integers
+int (*p)[3]; // a pinter to an array of 3 integers
