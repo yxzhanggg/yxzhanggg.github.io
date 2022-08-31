@@ -5,6 +5,7 @@ permalink: /C/
 ---
 # Specifier
 ```c
+// lifetime all belows are the whole program runtime
 // external
 // declare global among files
 // -file 1
