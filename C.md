@@ -61,3 +61,15 @@ char (*(*x())[])(); // function returning pointer to array of pointer
 char (*(*x[])())[]; // array of pointer to function returning pointer
                     // to array of char
 ```
+# sturcture
+```c
+struct point
+{
+  int x;
+  int y;
+ };
+sturct *pp;
+// structure operator . ->
+(*pp).x;
+pp->x;
+```
