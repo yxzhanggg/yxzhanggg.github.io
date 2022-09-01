@@ -7,6 +7,7 @@ style: light
 header_pages:
   - index.md
   - C.md
+  - C++.md
   - Unix.md
   - OOP.md
   - Algorithm.md
