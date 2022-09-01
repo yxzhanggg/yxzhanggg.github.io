@@ -9,5 +9,6 @@ header_pages:
   - C.md
   - Unix.md
   - OOP.md
+  - Algorithm.md
 
 footer: 'Yaoxin'
