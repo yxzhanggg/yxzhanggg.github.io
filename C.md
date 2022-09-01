@@ -49,3 +49,8 @@ int (*p)[3];     // A pinter to an array of 3 integers
                  // then dereference by [0] to the first element,
                  // which equals '-' in the case
 ```
+# function
+```c
+foo();
+foo; // the adress of the function, anology of array
+```
