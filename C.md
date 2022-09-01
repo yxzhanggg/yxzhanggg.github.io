@@ -52,7 +52,7 @@ int (*p)[3];     // A pinter to an array of 3 integers
 # function
 ```c
 int foo();
-int *foo(); //a function returns a pointer to int
+int *foop(); //a function returns a pointer to int
 foo; // the adress of the function, anology of array
-int (*foo)(); //foo is a pointer to the function
+int (*pfoo)(); //foo is a pointer to the function
 ```
