@@ -25,10 +25,11 @@ register int x;
 ```c
 // Compared with fixed-size array, pointer array is more compatible 
 // with heterogeneous data structure
-int array[3][2]; // Fixed-size array
+char arr[3][2]; // Fixed-size array
 
-int *array[3];   // Pointer array: an array of 3 pointers to integers
-int (*p)[3];     // A pinter to an array of 3 integers
+char *arr[3];   // Pointer array: an array of 3 pointers to chars
+char **arr;     // Pointer to pointer to char
+char (*p)[3];   // A pinter to an array of 3 chars
 
 //                 +---+         +---+---+---+---+---+
 // argv ---------->| 0 |-------->| p | r | o | g | 0 |
@@ -51,8 +52,12 @@ int (*p)[3];     // A pinter to an array of 3 integers
 ```
 # function
 ```c
-int foo();
-int *foop(); //a function returns a pointer to int
-foo; // the adress of the function, anology of array
-int (*pfoo)(); //foo is a pointer to the function
+int foo();          // a simple function declaration
+int *foop();        // a function returns a pointer to int
+foo;                // the adress of the function, anology of array
+int (*pfoo)();      //foo is a pointer to the function
+char (*(*x())[])(); // function returning pointer to array of pointer
+                    // to function returning char
+char (*(*x[])())[]; // array of pointer to function returning pointer
+                    // to array of char
 ```
