@@ -88,9 +88,9 @@ union {
 } u;
 
 struct { // bit-field: only take 1-bit without address
-unsigned int is_keyword : 1;
-unsigned int is_extern : 1;
-unsigned int is_static : 1;
+  unsigned int is_keyword : 1;
+  unsigned int is_extern : 1;
+  unsigned int is_static : 1;
 } flags;
 ```
 # Lookup idom
