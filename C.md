@@ -28,7 +28,7 @@ register int x;
 // with heterogeneous data structure
 char arr[3][2]; // Fixed-size array
 
-char *arr[3];   // Pointer array: an array of 3 pointers to chars
+char *arr[3];   for (ptr = head; ptr != NULL; ptr = ptr->next)// Pointer array: an array of 3 pointers to chars
 char **arr;     // Pointer to pointer to char
 char (*p)[3];   // A pinter to an array of 3 chars
 
@@ -80,7 +80,8 @@ struct tnode {         // The tree node
   struct tnode *left;  // Left child
   struct tnode *right; // Right child
 };
-
+```
 # Lookup idom
+```c
 for (ptr = head; ptr != NULL; ptr = ptr->next)
 ```
