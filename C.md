@@ -68,8 +68,11 @@ struct point
   int x;
   int y;
  };
-sturct *pp;
+sturct point *pp; // Passing large structure using pointer
 // structure operator . ->
 (*pp).x;
 pp->x;
 ```
+# Operator precedence
+address operator > unary operator > binary operator
+address operator: reference > dereference
