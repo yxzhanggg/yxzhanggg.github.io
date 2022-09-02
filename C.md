@@ -23,6 +23,7 @@ register int x;
 ```
 # Array
 ```c
+// The size of array is determined at compile time.
 // Compared with fixed-size array, pointer array is more compatible 
 // with heterogeneous data structure
 char arr[3][2]; // Fixed-size array
@@ -68,11 +69,16 @@ struct point
   int x;
   int y;
  };
-sturct point *pp; // Passing large structure using pointer
+sturct point *pp; // Pass large structure using pointer
 // structure operator . ->
 (*pp).x;
 pp->x;
+
+// Binary tree
+struct tnode {       // The tree node
+char *word;          // Points to the text
+int count;           // Number of occurrences
+struct tnode *left;  // Left child
+struct tnode *right; // Right child
+};
 ```
-# Operator precedence
-address operator > unary operator > binary operator
-address operator: reference > dereference
