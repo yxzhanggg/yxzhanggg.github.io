@@ -11,5 +11,6 @@ header_pages:
   - Unix.md
   - OOP.md
   - Algorithm.md
+  - About.md
 
-footer: 'Yaoxin'
+footer: 'Yaoxin.'
