@@ -80,4 +80,7 @@ struct tnode {         // The tree node
   struct tnode *left;  // Left child
   struct tnode *right; // Right child
 };
+
+# Lookup idom
+for (ptr = head; ptr != NULL; ptr = ptr->next)
 ```
