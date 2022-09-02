@@ -80,6 +80,13 @@ struct tnode {         // The tree node
   struct tnode *left;  // Left child
   struct tnode *right; // Right child
 };
+
+union {
+  int ival;
+  float fval;
+  char *sval;
+} u;
+
 ```
 # Lookup idom
 ```c
