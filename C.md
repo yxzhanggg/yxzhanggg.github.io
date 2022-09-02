@@ -56,7 +56,7 @@ char (*p)[3];   // A pinter to an array of 3 chars
 int foo();          // a simple function declaration
 int *foop();        // a function returns a pointer to int
 foo;                // the adress of the function, anology of array
-int (*pfoo)();      //foo is a pointer to the function
+int (*pfoo)();      // foo is a pointer to the function
 char (*(*x())[])(); // function returning pointer to array of pointer
                     // to function returning char
 char (*(*x[])())[]; // array of pointer to function returning pointer
@@ -74,7 +74,7 @@ sturct point *pp; // Pass large structure using pointer
 pp->x;
 
 // Binary tree
-struct tnode {       // The tree node
+struct tnode {         // The tree node
   char *word;          // Points to the text
   int count;           // Number of occurrences
   struct tnode *left;  // Left child
