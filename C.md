@@ -75,9 +75,9 @@ pp->x;
 
 // Binary tree
 struct tnode {       // The tree node
-char *word;          // Points to the text
-int count;           // Number of occurrences
-struct tnode *left;  // Left child
-struct tnode *right; // Right child
+  char *word;          // Points to the text
+  int count;           // Number of occurrences
+  struct tnode *left;  // Left child
+  struct tnode *right; // Right child
 };
 ```
