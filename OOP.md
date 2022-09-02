@@ -11,8 +11,7 @@ permalink: /OOP/
 // | Derived class | yes    | yes       | no      |
 // | Outside class | yes    | no        | no      |
 
-class Base
-{
+class Base {
   public: 
     int x;
   protected:
@@ -25,22 +24,19 @@ class Base
 // | public | protected | private |
 // | yes    | yes       | no      |
 
-class PublicDerived: public Base
-{
+class PublicDerived: public Base {
   // x is public
   // y is protected
   // z is not accessible from PublicDerived
 };
 
-class ProtectedDerived: protected Base
-{
+class ProtectedDerived: protected Base {
   // x is protected
   // y is protected
   // z is not accessible from ProtectedDerived
 };
 
-class PrivateDerived: private Base
-{
+class PrivateDerived: private Base {
   // x is private
   // y is private
   // z is not accessible from PrivateDerived
@@ -50,19 +46,16 @@ class PrivateDerived: private Base
 ```
 # Composition [PART-OF] and Delegation
 ```c++
-class A
-{
+class A {
   public:
     void foo();
 };
 
-class B
-{
+class B {
   private:
     A a;
   public:
-    void dfoo() // dfoo is a delegate from a
-    {
+    void dfoo() { // dfoo is a delegate from a
       a.foo();
     }
 };
@@ -72,18 +65,14 @@ class B
 ```
 # Aggregation [HAS-A]
 ```c++
-class A
-{
-};
+class A {};
 
-class B
-{
+class B {
   private:
     A *a;
 };
 
-class C
-{
+class C {
   private:
     A *a;
 };
