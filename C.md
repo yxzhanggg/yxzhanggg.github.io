@@ -64,8 +64,7 @@ char (*(*x[])())[]; // array of pointer to function returning pointer
 ```
 # sturcture
 ```c
-struct point
-{
+struct point {
   int x;
   int y;
  };
