@@ -50,6 +50,13 @@ char (*p)[3];   // A pinter to an array of 3 chars
 (*++argv)[0];    // increase the pointer argv, then dereference by *,
                  // then dereference by [0] to the first element,
                  // which equals '-' in the case
+                 
+#include <string.h>
+size_t strlen(const char *str);
+char *strcpy(char *destination, const char *source);
+char *strcat(char *destination, const char *source);
+int strcmp(const char *str1, const char *str2);
+char *strchr(char *str, int character);
 ```
 # function
 ```c
@@ -99,7 +106,7 @@ for (ptr = head; ptr != NULL; ptr = ptr->next)
 ```
 
 # file I/O
-stdin, stdout, stderr.
+stdin, stdout, stderr: 3 constant pointers to 3 FILE stucture.
 ```c
 #include <stdio.h>
 
@@ -110,8 +117,8 @@ int scanf(char *format, ...); // Returns the number of characters printed or EOF
                               // Reads characters from the standard input, arguments must be pointers (&x)
 int sprintf(char *string, char *format, arg1, arg2, ...); // Same above but to string
 int sscanf(char *string, char *format, arg1, arg2, ...);
-int fscanf(FILE *fp, char *format, ...) // Same above but to file
-int fprintf(FILE *fp, char *format, ...)
+int fprintf(FILE *fp, char *format, ...); // Same above but to file
+int fscanf(FILE *fp, char *format, ...);
 
 // Every file in Linux has FILE structure which is defined by typedef
 FILE *fp;
@@ -125,8 +132,17 @@ int putc(int c, FILE *fp);           // Writes the character c to the file fp an
 // Relations between get/put|c/char
 #define getchar() getc(stdin)
 #define putchar(c) putc((c), stdout)
-int ferror(FILE *fp)
 
+exit(0); // Equivalent return 0; calls fclose for each open output file, to flush out any buffered output.
+int ferror(FILE *fp); // File error: return non-zero of file fp when error
+int feof(FILE *fp);   // analogy above
+
+char *fgets(char *line, int maxline, FILE *fp) // Returns line or NULL
+int fputs(char *line, FILE *fp); // Return non-negative or EOF
+gets; // Deletes the terminating '\n', Same above but from stdin
+puts; // Adds the terminating '\n'
 ```
 
-Thanks Brian Kernighan and Dennis Ritchie for the "The C Programming Language"! The book is at an introductory level but some basic knowledge about discrete math, Linux, and computer system are required.
+
+Thanks Brian Kernighan and Dennis Ritchie for the "The C Programming Language"! The book is at an introductory level but some basic knowledge about discrete math, Linux, and computer system are required, but it indeed provides concise information for learning C language.
+
