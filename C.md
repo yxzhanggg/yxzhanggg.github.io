@@ -28,7 +28,7 @@ register int x;
 // with heterogeneous data structure
 char arr[3][2]; // Fixed-size array
 
-char *arr[3];   for (ptr = head; ptr != NULL; ptr = ptr->next)// Pointer array: an array of 3 pointers to chars
+char *arr[3];   // Pointer array: an array of 3 pointers to chars
 char **arr;     // Pointer to pointer to char
 char (*p)[3];   // A pinter to an array of 3 chars
 
@@ -99,19 +99,34 @@ for (ptr = head; ptr != NULL; ptr = ptr->next)
 ```
 
 # file I/O
+stdin, stdout, stderr.
 ```c
 #include <stdio.h>
 
-int getchar(void); // Returns the next input character or EOF
-int putchar(int);  // Puts the 'int' on the stdout(defualt), returns the character written or EOF
+int getchar(void);            // Returns the next input(stdin) character or EOF
+int putchar(int);             // Puts the 'int' on the stdout(defualt), returns the character written or EOF
 int printf(char *format, arg1, arg2, ...); // Returns the number of characters printed or EOF
-int sprintf(char *string, char *format, arg1, arg2, ...);
-int scanf(char *format, ...); // Reads characters from the standard input, arguments must be pointers (&x)
-int sscanf(char *string, char *format, arg1, arg2, ...); // Arguments must be pointers
+int scanf(char *format, ...); // Returns the number of characters printed or EOF
+                              // Reads characters from the standard input, arguments must be pointers (&x)
+int sprintf(char *string, char *format, arg1, arg2, ...); // Same above but to string
+int sscanf(char *string, char *format, arg1, arg2, ...);
+int fscanf(FILE *fp, char *format, ...) // Same above but to file
+int fprintf(FILE *fp, char *format, ...)
 
 // Every file in Linux has FILE structure which is defined by typedef
 FILE *fp;
 FILE *fopen(char *name, char *mode); // mode == ("r" || "w" || "a"); binary file: mode == ("rb" || "wb" || "ab");
+fp = fopen(char *name, char *mode);  // Returns a pointer to a FILE structure
+int fclose(FILE *fp);                // Break the pointer connection, return 0 or EOF
 int getc(FILE *fp);                  // Returns the next character from the stream referred to by fp or EOF
-int putc(int c, FILE *fp);           // writes the character c to the file fp and returns the character written
-                                     // Advance the position indicator for the stream                   
+                                     // Advance the position indicator for the stream
+int putc(int c, FILE *fp);           // Writes the character c to the file fp and returns the character written
+                                     // Advance the position indicator for the stream
+// Relations between get/put|c/char
+#define getchar() getc(stdin)
+#define putchar(c) putc((c), stdout)
+int ferror(FILE *fp)
+
+```
+
+Thanks Brian Kernighan and Dennis Ritchie for the "The C Programming Language"! The book is at an introductory level but some basic knowledge about discrete math, Linux, and computer system are required.
