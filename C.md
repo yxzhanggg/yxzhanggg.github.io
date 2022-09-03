@@ -141,8 +141,59 @@ char *fgets(char *line, int maxline, FILE *fp) // Returns line or NULL
 int fputs(char *line, FILE *fp); // Return non-negative or EOF
 gets; // Deletes the terminating '\n', Same above but from stdin
 puts; // Adds the terminating '\n'
+int ungetc(int c, FILE *fp); // Push char c to file fp, return c or EOF
 ```
+# Miscellaneous functions
+```c
+// String Operations
+#include <string.h>
+strcat(s,t);    // Concatenate t to end of s
+strncat(s,t,n); // Concatenate n characters of t to end of s
+strcmp(s,t);    // Return negative, zero, or positive for s < t, s == t, s > t
+strncmp(s,t,n); // Same as strcmp but only in first n characters
+strcpy(s,t);    // Copy t to s
+strncpy(s,t,n); // Copy at most n characters of t to s
+strlen(s);      // Return length of s
+strchr(s,c);    // Return pointer to first c in s, or NULL if not present
+strrchr(s,c);   // Return pointer to last c in s, or NULL if not present
 
+#include <ctype.h>
+isalpha(c); // Non-zero if c is alphabetic, 0 if not
+isupper(c); // Non-zero if c is upper case, 0 if not
+islower(c); // Non-zero if c is lower case, 0 if not
+isdigit(c); // Non-zero if c is digit, 0 if not
+isalnum(c); // Non-zero if isalpha(c) or isdigit(c), 0 if not
+isspace(c); // Non-zero if c is blank, tab, newline, return, formfeed, vertical tab
+toupper(c); // Return c converted to upper case
+tolower(c); // Return c converted to lower case
 
+system(char *s); // Executes the command s, then resume, return whatever s returns
+
+void *malloc(size_t n); // Returns a pointer to n bytes of uninitialized storage or NULL
+void *calloc(size_t n, size_t size); // Same above but array[n] each object with the size
+free(p); // Frees the space pointed to by p from malloc or calloc
+// Free a list
+for (p = head; p != NULL; p = q) {
+  q = p->next;
+  free(p);
+}
+
+#include <math.h> // Rake double type, return double type
+sin(x);   // sine of x, x in radians
+cos(x);   // cosine of x, x in radians
+atan2(y,x); // Arctangent of y/x, in radians
+exp(x);   // Exponential function ex
+log(x);   // Natural (base e) logarithm of x (x>0)
+log10(x); // Common (base 10) logarithm of x (x>0)
+pow(x,y); // x^y
+sqrt(x);  // Square root of x (x>0)
+fabs(x);  // Absolute value of x
+
+#include <stdlib.h>
+rand();          // Computes a sequence of pseudo-random integers in the range zero to RAND_MAX
+srand(unsigned); // Sets the seed of rand
+// Produce random floating-point numbers greater than or equal to zero but less than one
+#define frand() ((double) rand() / (RAND_MAX+1.0))
+```
 Thanks Brian Kernighan and Dennis Ritchie for the "The C Programming Language"! The book is at an introductory level but some basic knowledge about discrete math, Linux, and computer system are required, but it indeed provides concise information for learning C language.
 
