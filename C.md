@@ -195,5 +195,6 @@ srand(unsigned); // Sets the seed of rand
 // Produce random floating-point numbers greater than or equal to zero but less than one
 #define frand() ((double) rand() / (RAND_MAX+1.0))
 ```
-Thanks Brian Kernighan and Dennis Ritchie for the "The C Programming Language"! The book is at an introductory level but some basic knowledge about discrete math, Linux, and computer system are required, but it indeed provides concise information for learning C language.
+Thanks Brian Kernighan and Dennis Ritchie for the "The C Programming Language"! The book is at an introductory level but some basic knowledge about discrete math, Unix, and computer system are required, but it indeed provides concise information for learning C language.
 
+As Unix is written in C, it is also a good introductory material to get in touch with the Unix kernel.
