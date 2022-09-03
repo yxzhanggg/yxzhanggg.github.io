@@ -98,3 +98,20 @@ struct { // bit-field: only take 1-bit without address
 for (ptr = head; ptr != NULL; ptr = ptr->next)
 ```
 
+# file I/O
+```c
+#include <stdio.h>
+
+int getchar(void); // Returns the next input character or EOF
+int putchar(int);  // Puts the 'int' on the stdout(defualt), returns the character written or EOF
+int printf(char *format, arg1, arg2, ...); // Returns the number of characters printed or EOF
+int sprintf(char *string, char *format, arg1, arg2, ...);
+int scanf(char *format, ...); // Reads characters from the standard input, arguments must be pointers (&x)
+int sscanf(char *string, char *format, arg1, arg2, ...); // Arguments must be pointers
+
+// Every file in Linux has FILE structure which is defined by typedef
+FILE *fp;
+FILE *fopen(char *name, char *mode); // mode == ("r" || "w" || "a"); binary file: mode == ("rb" || "wb" || "ab");
+int getc(FILE *fp);                  // Returns the next character from the stream referred to by fp or EOF
+int putc(int c, FILE *fp);           // writes the character c to the file fp and returns the character written
+                                     // Advance the position indicator for the stream                   
