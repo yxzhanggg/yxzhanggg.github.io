@@ -105,7 +105,7 @@ struct { // bit-field: only take 1-bit without address
 for (ptr = head; ptr != NULL; ptr = ptr->next)
 ```
 
-# file I/O
+# File I/O
 stdin, stdout, stderr: 3 constant pointers to 3 FILE stucture.
 ```c
 #include <stdio.h>
