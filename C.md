@@ -180,7 +180,7 @@ for (p = head; p != NULL; p = q) {
   free(p);
 }
 
-#include <math.h> // Rake double type, return double type
+#include <math.h> // They take double type, return double type
 sin(x);   // sine of x, x in radians
 cos(x);   // cosine of x, x in radians
 atan2(y,x); // Arctangent of y/x, in radians
