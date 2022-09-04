@@ -23,4 +23,10 @@ Low level read/write
 ```c
 int n_read = read(int fd, char *buf, int n); // Returns byte transfered
 int n_written = write(int fd, char *buf, int n);
+#include <fcntl.h>
+fd = int open(char *name, int flags, int perms); // Value for flags: O_RDONLY, O_WRONLY, O_RDWR...
+fd = int creat(char *name, int perms);
+close(int fd); // Breaks the connection between a file descriptor and an open file, 
+               // and frees the file descriptor for use.
+unlink(char *name); // Removes the file name from the file system
 ```
