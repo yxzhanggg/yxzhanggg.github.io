@@ -29,7 +29,7 @@ fd = int creat(char *name, int perms);
 close(int fd); // Breaks the connection between a file descriptor and an open file, 
                // and frees the file descriptor for use.
 unlink(char *name); // Removes the file name from the file system
-long lseek(int fd, long offset, int origin); // Set the place that the file descriptor points to to a place in file
+long lseek(int fd, long offset, int origin); // Sets the place that the file descriptor points to to a place in file
                                              // Sets the current position in the file whose descriptor is fd to offset, 
                                              // which is taken relative to the location specified by origin: 0, 1, 2
 ```
