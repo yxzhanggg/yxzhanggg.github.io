@@ -18,3 +18,4 @@ File descriptor
 prog < infile > outfile
 # Pipe: the command still have defualt I/O, and pipe connects the I/O between files
 prog1 | prog2 | prog3
+```
