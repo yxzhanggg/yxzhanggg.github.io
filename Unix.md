@@ -15,6 +15,6 @@ File descriptor
 ```sh
 # The I/O is directed to 3 file descriptors by default
 # Redirection: replace the file descriptors by certain file
-prog < infile < outfile
+prog < infile > outfile
 # Pipe: the command still have defualt I/O, and pipe connects the I/O between files
 prog1 | prog2 | prog3
