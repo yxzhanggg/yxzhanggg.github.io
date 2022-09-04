@@ -3,6 +3,7 @@ title: /
 layout: home
 permalink: /
 ---
+勿忘初心。
 # This blog is my buffer of learning
 
 Many important concepts are distributed in various corners, and there are even different explanations. Many common problems do not have a concise solution (you have to re google again, then judge which is the optimal solution).
