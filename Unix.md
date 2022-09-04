@@ -19,3 +19,8 @@ prog < infile > outfile
 # Pipe: the command still have defualt I/O, and pipe connects the I/O between files
 prog1 | prog2 | prog3
 ```
+Low level read/write
+```c
+int n_read = read(int fd, char *buf, int n); // Returns byte transfered
+int n_written = write(int fd, char *buf, int n);
+```
