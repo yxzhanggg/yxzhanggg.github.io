@@ -130,6 +130,8 @@ int getc(FILE *fp);                  // Returns the next character from the stre
 int putc(int c, FILE *fp);           // Writes the character c to the file fp and returns the character written
                                      // Advance the position indicator for the stream
 // Relations between get/put|c/char
+#undef getchar
+#undef putchar
 #define getchar() getc(stdin)
 #define putchar(c) putc((c), stdout)
 
