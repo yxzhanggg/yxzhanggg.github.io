@@ -24,7 +24,7 @@ int quick_pow(int a, int b) {
   int temp = a, ans = 1;
   while (b) {
     if (b % 2) {
-    ans = ans * temp
+    ans = ans * temp;
     }
   b /= 2;
   temp = temp * temp;
