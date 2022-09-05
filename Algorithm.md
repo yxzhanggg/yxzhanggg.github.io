@@ -14,3 +14,27 @@ void swap(void *v[], int i, int j)
   v[j] = temp;
 }
 ```
+# Quick power
+// decimal to binary: 10 = 1 0 1 0 
+//                         8 4 2 1
+//                    a^10 = a^8 * a^2
+
+int quick_pow(int a, int b) {
+  int temp = a, ans = 1;
+  while (b) {
+    if (b % 2) {
+    ans = ans * temp
+    }
+  b /= 2;
+  temp = temp * temp;
+  }
+  return ans;
+}
+
+int main() {
+  int a, b;
+  while (cin >> a >> b) {
+    return 0;
+  }
+}
+```
