@@ -15,6 +15,7 @@ void swap(void *v[], int i, int j)
 }
 ```
 # Quick power
+```c++
 // decimal to binary: 10 = 1 0 1 0 
 //                         8 4 2 1
 //                    a^10 = a^8 * a^2
