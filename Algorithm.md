@@ -35,7 +35,8 @@ int quick_pow(int a, int b) {
 int main() {
   int a, b;
   while (cin >> a >> b) {
-    return 0;
+  cout << quick_pow(a, b) << endl;  
+  return 0;
   }
 }
 ```
