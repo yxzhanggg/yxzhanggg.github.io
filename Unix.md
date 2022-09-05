@@ -33,3 +33,24 @@ long lseek(int fd, long offset, int origin); // Sets the place that the file des
                                              // Sets the current position in the file whose descriptor is fd to offset, 
                                              // which is taken relative to the location specified by origin: 0, 1, 2
 ```
+# Directory
+The 'inode' for a file is where all information about the file except its name is kept.
+```c
+#include <dirent.h>
+#define NAME_MAX 14
+
+// Dirent structure contains the inode number and the name
+typedef struct { // portable directory entry
+  long ino;      // inode number
+  char name[NAME_MAX+1]; // name + '\0' terminator
+} Dirent;
+
+typedef struct { // minimal DIR: no buffering, etc
+  int fd;        // file descriptor for the directory
+  Dirent d;      // the directory entry
+} DIR;
+
+DIR *opendir(char *dirname); // DIR is a structure analogous to FILE
+Dirent *readdir(DIR *dfd);
+void closedir(DIR *dfd);
+```
