@@ -7,6 +7,7 @@ permalink: /Algorithm/
 1. Initialization: It is true prior to the ﬁrst iteration of the loop.
 2. Maintenance: If it is true before an iteration of the loop, it remains true before the next iteration.
 3. Termination: When the loop terminates, the invariant gives us a useful property that helps show that the algorithm is correct.
+
 # Recurrence
 Reccurence is one type of loops (loop itself).
 Rules:
@@ -14,6 +15,7 @@ Rules:
 2. Making progress. For the cases that are to be solved recursively, the recursive call must always be to a case that makes progress toward a base case.
 3. Design rule. Assume that all the recursive calls work.
 4. Compound interest rule. Never duplicate work by solving the same instance of a problem in separate recursive calls.
+
 ```c++
 void getInput(){
     char c; // initialization
