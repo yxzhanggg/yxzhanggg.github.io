@@ -35,6 +35,7 @@ long lseek(int fd, long offset, int origin); // Sets the place that the file des
 ```
 # Directory
 The 'inode' for a file is where all information about the file except its name is kept.
+
 ```c
 #include <dirent.h>
 #define NAME_MAX 14
