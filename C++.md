@@ -18,4 +18,5 @@ cout << f(1,2) << endl; // 3
 cout << M << endl; // 20
 ```
 # Classes
-Initializer saves time than declaration in class body.
+Initializer runs faster than assignment in class body.
+
