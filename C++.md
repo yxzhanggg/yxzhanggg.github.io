@@ -20,3 +20,12 @@ cout << M << endl; // 20
 # Classes
 Initializer runs faster than assignment in class body.
 
+# Reference
+Reference is a synomym of the original value.
+```c++
+// lvalue (stable value) reference
+int a = 1;
+int &b = a;
+// rvalue (temporary value) reference
+string &&c = "hello";
+```
