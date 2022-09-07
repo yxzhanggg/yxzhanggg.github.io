@@ -42,7 +42,7 @@ for (auto &x : arr) { // without '&', x is a copy of the original one
 // rvalue (temporary value) reference
 string &&c = "hello";
 string randomItem(vector<string> && arr); // overloading randomItem
-vector<string> v { "hello", "world"};
+vector<string> v {"hello", "world"};
 cout << randomItem(v) << endl; // invokes lvalue method
 cout << randomItem({"hello", "world"}) << endl; // invokes rvalue method
 ```
