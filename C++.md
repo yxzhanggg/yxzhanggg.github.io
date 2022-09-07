@@ -21,6 +21,7 @@ cout << M << endl; // 20
 Initializer runs faster than assignment in class body.
 
 # Reference
+Sometime the pointer is too dangerous, so here is a high-level implementation of pointer - reference. (C++11)
 Reference is a synomym of the original value.
 ```c++
 // lvalue (stable value) reference
@@ -45,4 +46,8 @@ string randomItem(vector<string> && arr); // overloading randomItem
 vector<string> v {"hello", "world"};
 cout << randomItem(v) << endl; // invokes lvalue method
 cout << randomItem({"hello", "world"}) << endl; // invokes rvalue method
+
+// return type
+const LargeType &item3 = randomItem2(vec); // return a non-modiﬁable value such as a value in an array
+vector<int> sums = partialSum(vec); // Copy(memory allocation) in old C++; move(changing pointer) in C++11
 ```
