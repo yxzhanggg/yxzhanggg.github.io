@@ -4,7 +4,7 @@ layout: page
 permalink: /C++/
 ---
 # Iterator
-iterate through the contents of containers without considering the the size of contents
+iterate through the contents of containers without considering the the size of the content.
 # Lambda expression / Closure
 A function without name
 ```c++
@@ -21,7 +21,7 @@ cout << M << endl; // 20
 Initializer runs faster than assignment in class body.
 
 # Reference
-Sometime the pointer is too dangerous, so here is a high-level implementation of pointer - reference. (C++11)
+Sometime the pointer is too dangerous, so here is a high-level implementation of the pointer - REFERENCE.
 Reference is a synomym of the original value.
 ```c++
 // lvalue (stable value) reference
