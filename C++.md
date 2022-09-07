@@ -46,6 +46,8 @@ string randomItem(vector<string> && arr); // overloading randomItem
 vector<string> v {"hello", "world"};
 cout << randomItem(v) << endl; // invokes lvalue method
 cout << randomItem({"hello", "world"}) << endl; // invokes rvalue method
+// cast any value into rvalue, avoid copying
+y = std::move(x);
 
 // return type
 const LargeType &item3 = randomItem2(vec); // Return-by-constant-reference:
