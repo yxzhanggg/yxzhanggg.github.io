@@ -48,6 +48,7 @@ cout << randomItem(v) << endl; // invokes lvalue method
 cout << randomItem({"hello", "world"}) << endl; // invokes rvalue method
 
 // return type
-const LargeType &item3 = randomItem2(vec); // return a non-modiﬁable value such as a value in an array
+const LargeType &item3 = randomItem2(vec); // Return-by-constant-reference:
+                                           // return a non-modiﬁable value such as a value in an array
 vector<int> sums = partialSum(vec); // Copy(memory allocation) in old C++; move(changing pointer) in C++11
 ```
