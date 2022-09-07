@@ -42,7 +42,7 @@ for (auto &x : arr) { // without '&', x is a copy of the original one
 
 // rvalue (temporary value) reference
 string &&c = "hello";
-string randomItem(vector<string> && arr); // overloading randomItem
+string randomItem(vector<string> &&arr); // overloading randomItem
 vector<string> v {"hello", "world"};
 cout << randomItem(v) << endl; // invokes lvalue method
 cout << randomItem({"hello", "world"}) << endl; // invokes rvalue method
@@ -53,4 +53,13 @@ y = std::move(x);
 const LargeType &item3 = randomItem2(vec); // Return-by-constant-reference:
                                            // return a non-modiﬁable value such as a value in an array
 vector<int> sums = partialSum(vec); // Copy(memory allocation) in old C++; move(changing pointer) in C++11
+```
+# Constructors
+lvalue invokes copy constructor/assignment, rvalue invokes move constructor/assignment.
+```c++
+~IntCell(); // Deconstructor
+IntCell(const IntCell &rhs); \\ Copy constructor
+IntCell(IntCell &&rhs); \\ Move constructor 
+IntCell &operator=(const IntCell &rhs); \\ Copy assignment
+IntCell &operator=(IntCell &&rhs); \\ Move assignment
 ```
