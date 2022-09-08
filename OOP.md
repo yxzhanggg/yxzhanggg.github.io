@@ -13,11 +13,11 @@ permalink: /OOP/
 
 class Base {
   public: 
-    int x;
+   int x;
   protected:
-    int y;
+   int y;
   private:
-    int z;
+   int z;
 };
 
 // Inheritability
@@ -48,16 +48,16 @@ class PrivateDerived: private Base {
 ```c++
 class A {
   public:
-    void foo();
+   void foo();
 };
 
 class B {
-  private:
-    A a;
   public:
-    void dfoo() { // dfoo is a delegate from a
-      a.foo();
-    }
+   void dfoo() { // dfoo is a delegate from a
+     a.foo();
+   }
+  private:
+   A a;
 };
 
 // B is a composition with A 
@@ -69,12 +69,12 @@ class A {};
 
 class B {
   private:
-    A *a;
+   A *a;
 };
 
 class C {
   private:
-    A *a;
+   A *a;
 };
 
 // B and C are both aggregates of A 
