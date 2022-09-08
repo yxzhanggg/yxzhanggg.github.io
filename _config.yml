@@ -13,7 +13,4 @@ header_pages:
   - Algorithm.md
   - About.md
   
-plugins:
-  - jekyll-pdf-embed
-  
 footer: 'Yaoxin.'
