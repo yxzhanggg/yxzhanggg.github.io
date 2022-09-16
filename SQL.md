@@ -10,7 +10,7 @@ SELECT -- return, last excution precedence
 FROM
   <table>;
 -- Optional constraints
-WHERE -- global filter, first excution precedence
+WHERE -- global filter, first execution precedence
   <constraints expression>
 ORDER BY
   <column> DESC/ASC
@@ -25,9 +25,9 @@ SUM();
 AVG();
 COUNT();
 -- Optional constraints
-GROUP BY -- after WHERE
+GROUP BY -- execute after WHERE
   <column>
-HAVING -- group filter
+HAVING -- group filter, execute after GROUP
   <constraints expression>
 ```
 # Window function
