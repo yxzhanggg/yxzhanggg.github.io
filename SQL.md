@@ -6,16 +6,21 @@ permalink: /SQL/
 The Stuctural Quary Language(SQL) is based on relational model, so basically it operates on the columns(selecting the attributes) and the rows(filtering the attributes).
 # Paradigm
 ```sql
-SELECT -- return, last excution precedence
+SELECT -- Return, last excution precedence
   <column>
 FROM
   <table>;
--- Optional constraints
-WHERE -- global filter, first execution precedence
+-- Optional constraints, define virtual table
+WHERE -- Global filter, first execution precedence
+  <constraints expression>
+GROUP BY -- Execute after WHERE
+  <column>
+HAVING -- Group filter, execute after GROUP
   <constraints expression>
 ORDER BY
   <column> DESC/ASC
 LIMIT <int-value>
+
 ```
 # Aggregation function
 Get multiple values, return single value
@@ -25,15 +30,18 @@ MAX();
 SUM();
 AVG();
 COUNT();
--- Optional constraints
-GROUP BY -- execute after WHERE
-  <column>
-HAVING -- group filter, execute after GROUP
-  <constraints expression>
 ```
 # Window function
 Paradigm: aggregation + OVER expression
 ```sql
-
+RANK(); -- Return rank of the entries inside OVER
+SELECT
+  <column>,
+  <aggregation function>
+    OVER (
+     PARTITION BY <column>
+    )
+FROM
+  <table>;
 ```
 
