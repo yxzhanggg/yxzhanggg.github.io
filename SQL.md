@@ -3,6 +3,7 @@ title: /SQL
 layout: page
 permalink: /SQL/
 ---
+The Stuctural Quary Language(SQL) is based on relational model, so basically it operates on the columns(selecting the attributes) and the rows(filtering the attributes).
 # Paradigm
 ```sql
 SELECT -- return, last excution precedence
@@ -31,7 +32,7 @@ HAVING -- group filter, execute after GROUP
   <constraints expression>
 ```
 # Window function
-Paradigm: aggregation + OVER
+Paradigm: aggregation + OVER expression
 ```sql
 
 ```
