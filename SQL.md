@@ -5,12 +5,12 @@ permalink: /SQL/
 ---
 # Paradigm
 ```sql
-SELECT
+SELECT -- return, last excution precedence
   <column>
 FROM
   <table>;
 -- Optional constraints
-WHERE -- global filter
+WHERE -- global filter, first excution precedence
   <constraints expression>
 ORDER BY
   <column> DESC/ASC
@@ -31,5 +31,8 @@ HAVING -- group filter
   <constraints expression>
 ```
 # Window function
-aggregation + OVER 
+Paradigm: aggregation + OVER
+```sql
+
+```
 
