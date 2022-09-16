@@ -30,8 +30,7 @@ Paradigm: aggregation + OVER expression
 RANK(); -- Return rank of the entries inside OVER
 SELECT <column>,
        <aggregation function> OVER (
-         PARTITION BY <column>
-       )
+         PARTITION BY <column>)
 FROM <table>;
 ```
 
