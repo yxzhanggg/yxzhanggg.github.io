@@ -14,7 +14,7 @@ WHERE -- global filter
   <constraints expression>
 ORDER BY
   <column> DESC/ASC
-LIMIT <int value>
+LIMIT <int-value>
 ```
 # Aggregation function
 Get multiple values, return single value
