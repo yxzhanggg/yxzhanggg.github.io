@@ -11,7 +11,7 @@ FROM
   <table>;
 -- Optional constraints
 WHERE -- global filter
-  <constraint expression>
+  <constraints expression>
 ORDER BY
   <column> DESC/ASC
 LIMIT <int value>
@@ -28,7 +28,7 @@ COUNT();
 GROUP BY -- after WHERE
   <column>
 HAVING -- group filter
-  <constraint expression>
+  <constraints expression>
 ```
 # Window function
 aggregation + OVER 
