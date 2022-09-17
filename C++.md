@@ -57,9 +57,13 @@ vector<int> sums = partialSum(vec); // Copy(memory allocation) in old C++; move(
 # Constructors
 lvalue invokes copy constructor/assignment, rvalue invokes move constructor/assignment.
 ```c++
+explicit IntCell(int i) : i_(i); // Avoid implicit conversion (potential error)
 ~IntCell(); // Deconstructor
 IntCell(const IntCell &rhs); // Copy constructor
 IntCell(IntCell &&rhs); // Move constructor 
 IntCell &operator=(const IntCell &rhs); // Copy assignment
 IntCell &operator=(IntCell &&rhs); // Move assignment
+
 ```
+# [C++11]Smart pointer
+
