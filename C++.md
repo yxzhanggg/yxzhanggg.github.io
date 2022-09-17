@@ -73,3 +73,27 @@ uniquePtr.release();
 shared_ptr<someType> somePtr(new someType(args));
 weak_ptr<someType> weakPtr= somePtr;
 ```
+# Virtual function
+```c++
+class A {
+  public:
+   virtual const char* fetchClassName() { return "A"; }
+};
+
+class B: public A {
+  public:
+   const char* fetchClassName() { return "B"; }
+};
+
+class C: public B {
+  public:
+   const char* fetchClassName() { return "C"; }
+};
+
+int main(void) {
+   C obj_c;
+   A &obj_a = obj_c;   
+   std::cout << obj_a.fetchClassName() << "\n";
+}
+// Output: C
+```
