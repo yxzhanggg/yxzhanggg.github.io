@@ -93,7 +93,9 @@ class C: public B {
 int main(void) {
   C obj_c;
   A &obj_a = obj_c;   
-  std::cout << obj_a.fetchClassName() << "\n";
+  std::cout << obj_a.fetchClassName() << "\n"; \\ Output: C
+  B obj_b;
+  A &obj_a = obj_b;   
+  std::cout << obj_a.fetchClassName() << "\n"; \\ Output: B
 }
-// Output: C
 ```
