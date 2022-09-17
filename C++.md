@@ -66,4 +66,10 @@ IntCell &operator=(IntCell &&rhs); // Move assignment
 
 ```
 # [C++11]Smart pointer
-
+```c++
+unique_ptr<someType> suniquePtr(new someType(args));
+...
+uniquePtr.release();
+shared_ptr<someType> somePtr(new someType(args));
+weak_ptr<someType> weakPtr= somePtr;
+```
