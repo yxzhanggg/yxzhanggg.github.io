@@ -10,6 +10,6 @@ Many important concepts are distributed in various corners, and there are even d
 
 Then I have this blog, to explain inexplicable concepts（as categorized in pages), and to document solutions to frequently encountered problems (as posts).
 
-# PS: I also have a naive [math blog](https://yxzhanggg.github.io/mathblog/):)
+My naive [math blog](https://yxzhanggg.github.io/mathblog/):)
 ---
 # Posts
