@@ -52,7 +52,8 @@ class A {
    int x_;
    
   friend class B; // [not member] Just declaration, does not belong to any member of public, protected or private
-  friend void foo(A, B); // Friend Function just as Friend Class
+  friend int foo(A, B); // Friend Function just as Friend Class
+  friend int B::bar();
 };
 
 class B {
@@ -62,7 +63,7 @@ class B {
   friend void foo(A, B);
 };
 
-void foo(A a, B b) {
+int foo(A a, B b) {
   return a.x_+b.x_;
 }
 
