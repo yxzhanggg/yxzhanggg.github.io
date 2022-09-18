@@ -44,34 +44,6 @@ class PrivateDerived: private Base {
 };
 
 // Derived "IS-A" derivative of Base
-
-// Bridging and accessing
-// A friend class can access private and protected members of other class in which it is declared as friend.
-// All access granted.
-class A {
-  private:
-   int x_;
-  
-  friend class B; // [not member] Just declaration, does not belong to any member of public, protected or private
-                  // members in B can access members of A
-  friend int B::bar(); // only member function bar() of B can access members of A
-  friend int foo(A, B); // Friend function just as Friend Class
-  friend int B::bar();
-};
-
-class B {
-  private:
-   int x_;
-  public:
-  int bar();
-  
-  friend void foo(A, B);
-};
-
-int foo(A a, B b) {
-  return a.x_+b.x_;
-}
-
 ```
 # Composition [PART-OF] and Delegation
 ```c++
