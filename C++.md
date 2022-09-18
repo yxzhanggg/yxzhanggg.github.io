@@ -101,7 +101,6 @@ int main(void) {
 ```
 # Friend
 ```c++
-
 // Bridging and accessing
 // A friend class can access private and protected members of other class in which it is declared as friend.
 // All access granted.
