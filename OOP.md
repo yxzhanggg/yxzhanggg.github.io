@@ -4,6 +4,7 @@ layout: page
 permalink: /OOP/
 ---
 # Inheritance [IS-A]
+Constructors, destructors, friend functions and overloaded operators cannot be inherited.
 ```c++
 // Acceccibility
 // | Access        | public | protected | private |
