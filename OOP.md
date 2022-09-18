@@ -45,6 +45,7 @@ class PrivateDerived: private Base {
 
 // Derived "IS-A" derivative of Base
 
+// Bridging and accessing
 // A friend class can access private and protected members of other class in which it is declared as friend.
 // All access granted.
 class A {
