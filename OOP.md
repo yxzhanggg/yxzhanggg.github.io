@@ -59,7 +59,9 @@ class A {
 class B {
   private:
    int x_;
-   
+  public:
+  int bar();
+  
   friend void foo(A, B);
 };
 
