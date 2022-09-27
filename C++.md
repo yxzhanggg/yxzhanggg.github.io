@@ -21,8 +21,7 @@ cout << M << endl; // 20
 Initializer runs faster than assignment in class body.
 
 # Reference
-Sometime the pointer is too dangerous, so here is a high-level implementation of the pointer - REFERENCE.
-Reference is a synomym of the original value.
+Reference is a synomym of the original value, but not an object (pointer is an object).
 ```c++
 // lvalue (stable value) reference
 // 1. aliasing
