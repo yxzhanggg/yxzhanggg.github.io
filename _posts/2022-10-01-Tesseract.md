@@ -10,6 +10,6 @@ sudo apt-get install libleptonica-dev
 ```
 include these into your CMakeLists.txt
 ```cmake
-target_link_libraries (${PROJECT_NAME} PRIVATE tesseract)
-target_link_libraries (${PROJECT_NAME} PRIVATE leptonica)
+target_link_libraries(${PROJECT_NAME} PRIVATE tesseract)
+target_link_libraries(${PROJECT_NAME} PRIVATE leptonica)
 ```
