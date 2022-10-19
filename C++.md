@@ -127,3 +127,5 @@ int foo(A a, B b) {
   return a.x_+b.x_;
 }
 ```
+# Conventions
+Use`{}` for initialization, use `=` for copying, use `()` for arguments transfer.
