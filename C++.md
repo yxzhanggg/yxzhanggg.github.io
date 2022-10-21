@@ -4,7 +4,12 @@ layout: page
 permalink: /C++/
 ---
 # Iterator
-iterate through the contents of containers without considering the the size of the content.
+```c++
+std::string s{"12132s"};
+itb = s.begin();
+ite = s.end();
+first_value = *itb;
+```
 # Lambda expression / Closure
 A function without name
 ```c++
