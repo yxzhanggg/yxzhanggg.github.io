@@ -113,7 +113,6 @@ class A {
                   // members in B can access members of A
   friend int B::bar(); // only member function bar() of B can access members of A
   friend int foo(A, B); // Friend function just as Friend Class
-  friend int B::bar();
   private:
    int x_;
 };
