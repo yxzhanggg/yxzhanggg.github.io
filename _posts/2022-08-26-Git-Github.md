@@ -9,6 +9,7 @@ date:   2022-08-26
 # Configure local git
 git config --global user.name "<name>"
 git config --global user.email "<email>"
+git config --global core.editor "vim"
 
 # Generate ssh file
 ssh-keygen -t rsa
