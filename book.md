@@ -12,7 +12,8 @@ permalink: /book-map/
 1) Mathematical methods of classical mechanics. VI Arnol'd.
 
 # Control Theory
-1) Control system design: an introduction to state-space methods. Friedland, Bernard.
+1) Signals and Systems. Oppenheim, Alan, Willsky, Alan, Nawab, S.
+2) Control system design: an introduction to state-space methods. Friedland, Bernard.
 
 # Circuitry
 1) Foundations of analog and digital electronic circuits. Agarwal, Anant, and Jeffrey Lang.
