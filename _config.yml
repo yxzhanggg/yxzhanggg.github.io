@@ -6,7 +6,7 @@ style: light
 
 header_pages:
   - index.md
-  - Book.md
+  - book.md
   - C.md
   - C++.md
   - Unix.md
