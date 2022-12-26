@@ -21,6 +21,7 @@ permalink: /book-map/
 # Computer System
 1) Computer systems: a programmer's perspective. Bryant, Randal E., O'Hallaron David Richard, and O'Hallaron David Richard.
 2) Structured computer organization. AS Tanenbaum.
+3) What Every Programmer Should Know About Memory. Ulrich Drepper.
 
 # Unix/Linux
 1) The Linux command line: a complete introduction. Shotts, William.
