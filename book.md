@@ -33,7 +33,6 @@ permalink: /map/
 # Programming Languages
 1) The C programming language. Kernighan, Brian W., and Dennis M. Ritchie.
 2) C++ Primier. Stanley B. Lippman, et al.
-3) [CS107 - Programming Paradigms. Stanford.](https://see.stanford.edu/course/cs107)
 
 # Algorithms and Design
 1) Introduction to algorithms. TH Cormen, CE Leiserson, RL Rivest, C Stein.
