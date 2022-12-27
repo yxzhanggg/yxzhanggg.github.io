@@ -34,9 +34,10 @@ permalink: /map/
 1) The C programming language. Kernighan, Brian W., and Dennis M. Ritchie.
 2) C++ Primier. Stanley B. Lippman, et al.
 
-# Algorithms and Design
-1) Introduction to algorithms. TH Cormen, CE Leiserson, RL Rivest, C Stein.
-2) Design patterns: elements of reusable object-oriented software. Gamma, Erich, et al.
+# Data Structures, Algorithms and Design
+1) Data structures and algorithms analysis in C++. Mark Allen Weiss.
+2) Introduction to algorithms. TH Cormen, CE Leiserson, RL Rivest, C Stein.
+3) Design patterns: elements of reusable object-oriented software. Gamma, Erich, et al.
 
 # Reviews
 1) [CS107 - Programming Paradigms. Stanford.](https://see.stanford.edu/course/cs107)
