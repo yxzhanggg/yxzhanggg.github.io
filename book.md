@@ -22,9 +22,8 @@ permalink: /map/
 1) Computer systems: a programmer's perspective. Bryant, Randal E., O'Hallaron David Richard, and O'Hallaron David Richard.
 2) Structured computer organization. AS Tanenbaum.
 3) What Every Programmer Should Know About Memory. Ulrich Drepper.
-4) Structure and Interpretation of Computer Programs. Harold Abelson and Gerald Jay Sussman with Julie Sussman, foreword by Alan J. Perlis.
-5) [CMU 15-445/645 Database Systems](https://15445.courses.cs.cmu.edu/)
-6) [6.824: Distributed Systems](https://pdos.csail.mit.edu/6.824/)
+4) [CMU 15-445/645 Database Systems](https://15445.courses.cs.cmu.edu/)
+5) [6.824: Distributed Systems](https://pdos.csail.mit.edu/6.824/)
 
 # Unix/Linux
 1) The Linux command line: a complete introduction. Shotts, William.
@@ -41,3 +40,4 @@ permalink: /map/
 
 # Reviews
 1) [CS107 - Programming Paradigms. Stanford.](https://see.stanford.edu/course/cs107)
+2) Structure and Interpretation of Computer Programs. Harold Abelson and Gerald Jay Sussman with Julie Sussman, foreword by Alan J. Perlis.
