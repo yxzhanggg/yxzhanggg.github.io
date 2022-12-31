@@ -14,6 +14,7 @@ permalink: /map/
 # Control Theory
 1) [Signals and Systems. Oppenheim, Alan.](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/)
 2) Control system design: an introduction to state-space methods. Friedland, Bernard.
+3) [Kalman Filter](https://www.kalmanfilter.net/default.aspx)
 
 # Circuitry
 1) Foundations of analog and digital electronic circuits. Agarwal, Anant, and Jeffrey Lang.
