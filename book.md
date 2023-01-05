@@ -7,6 +7,7 @@ permalink: /map/
 1) Introduction to linear algebra.
 2) Introduction to applied linear algebra: vectors, matrices, and least squares.
 3) Convex optimization.
+4) Introduction to Graph Theory.
 
 # Mechanics
 1) Mathematical methods of classical mechanics.
