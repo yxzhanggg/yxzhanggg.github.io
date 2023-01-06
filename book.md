@@ -35,6 +35,7 @@ permalink: /map/
 # Programming Languages
 1) The C programming language.
 2) C++ Primier.
+3) The C++ Standard Library: A Tutorial and Reference.
 
 # Data Structures, Algorithms and Design
 1) Data structures and algorithms analysis in C++.
