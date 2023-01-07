@@ -12,7 +12,7 @@ permalink: /map/
 # Mechanics
 1) Mathematical methods of classical mechanics.
 
-# Control Theory
+# Cybernetic
 1) [Signals and Systems.](https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/)
 2) [Feedback Systems: An Introduction for Scientists and Engineers.](http://www.cds.caltech.edu/~murray/books/AM08/pdf/fbs-public_24Jul2020.pdf)
 3) Control system design: an introduction to state-space methods.
